@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+.table__headerProductsByCategory {
+    background-color: #C1C1C1;
+}
+
+.table__productsByCategory,
+.table__headerProductsByCategory {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 30px minmax(150px, 1fr) 50px repeat(2, minmax(150px, 1fr)) 50px 150px 100px minmax(100px, .5fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.table__productsByCategory {
+    background-color: white;
+}
+
+.table__productsByCategory p {
+    width: 150px;
+    overflow: auto;
+}
+
+.products_track{
+height: 100px;
+overflow-y: scroll;
+}
+
+.add,
+.remove,
+.update {
+    cursor: pointer;
+}
+
+input {
+    padding: 5px 10px;
+    outline: none;
+}
+
+button {
+    padding: 7px 30px 7px 30px;
+    background-color: #7b00df;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+#genre {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#executor,
+#country,
+#area,
+#city {
+    margin-bottom: 20px;
+}
+
+.modal__area {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    width: 200px;
+    padding: 7px 30px;
+    background-color: #C1C1C1;
+    border-radius: 3px;
+    border: 1px solid rgb(205, 205, 205);
+}
+
+.modal__title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal__block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 5px 10px;
+    outline: none;
+}
+
+.update__form {
+    width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 5px 10px rgb(227, 227, 227);
+}
+
+.update_info{
+    height: 400px;
+}
+
+.add_city {
+    margin-bottom: 20px;
+}
+
+[name='id'] {
+    width: 50px;
+    text-align: right;
+}
+
+.doing_treck {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[name='treck']{
+    width: 70%;
+}
+
+.update__block{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.track__p{
+    width: 300px;
+}
+
+.newTrack{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.name{
+    width: 100%;
+}
+
+[alt='icon']{
+    width: 32px;
+    height: 32px;
+}
+
+.finishInsertProduct{
+    color: white;
+    text-decoration: none;
+}
+
+@media(max-width:525px) {
+    .update__form {
+        width: 250px;
+    }
+}

@@ -1,0 +1,167 @@
+.header__enterReg {
+    border-bottom: 1px solid black;
+}
+
+.registration{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 60px 30px 60px 30px;
+    border: 1px solid black;
+}
+
+header {
+    padding-bottom: 100px;
+}
+
+.registration__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.registration__text,
+.registration__type_password {
+    height: 35px;
+    width: 100%;
+    outline: none;
+    padding: 10px 0px 10px 25px;
+    background-color: #EAE5D7;
+    border: 1px solid black;
+}
+
+.registration__type_password::-ms-reveal {
+    display: none;
+}
+
+.registration__text::placeholder,
+.registration__type_password::placeholder {
+    color: black;
+}
+
+.registration__politics{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.registration__span{
+   color: black;
+}
+
+.registration__label p{
+    font-size: 10px;
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.276);
+}
+
+.registration__label p:hover{
+    text-decoration: underline;
+}
+
+.registration__label{
+    display: flex;
+    align-items: center;
+}
+
+input[type='checkbox']{
+    display: none;
+}
+
+label::before{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+input[type='checkbox']:checked + label::before{
+    background: url(/accets/img/tickCheck.png) no-repeat;
+    background-size: 100%;
+}
+
+.registration__btn{
+    height: 35px;
+    width: 100%;
+    background-color: black;
+    color: #EAE5D7;
+}
+
+.registration__btn:disabled{
+    background-color: rgba(0, 0, 0, 0.489);
+    color: #eae5d788;
+}
+
+.registration__type_password {
+    position: relative;
+}
+
+.registration__img_password {
+    width: 20px;
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 7.5px;
+    cursor: pointer;
+}
+
+.input__p{
+    margin-top: -40px;
+    font-size: 12px;
+}
+
+.input__p_margin_little{
+    font-size: 12px;
+}
+
+@media(max-width:725px) {
+    .registration__title {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:380px) {
+
+    .registration {
+        width: 250px;
+        gap: 20px;
+        padding: 50px 20px 50px 20px;
+    }
+
+    header {
+        padding-bottom: 60px;
+    }
+
+    .registration__title {
+        font-size: 20px;
+    }
+
+    .registration__text,
+    .registration__type_password,
+    .registration__btn {
+        height: 25px;
+    }
+
+    .registration__type_password {
+        background-size: 14px;
+        background-position: 175px;
+    }
+
+    .registration__desc {
+        font-size: 7px;
+    }
+
+    label::before{
+        width: 60px;
+        height: 22px;
+    }
+
+    .registration__img_password {
+        width: 17px;
+        margin-left: -35px;
+        margin-top: 5px;
+    }
+
+}

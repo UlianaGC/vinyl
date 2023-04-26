@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #eaeaea;
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7b00df;
+    padding: 15px 65px 15px 65px;
+}
+
+.nav__left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav__image {
+    width: 45px;
+    height: 45px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.main__menu {
+    display: flex;
+    flex-direction: column;
+    width: 265px;
+    height: 91.5vh;
+    background-color: #000033;
+    color: white;
+    font-size: 16px;
+}
+
+.menu__desc:first-child {
+    margin-top: 35px;
+}
+
+.menu__desc {
+    width: 100%;
+    padding: 20px 5px 20px 5px;
+}
+
+.menu__desc a {
+    width: 100%;
+    padding: 20px 65px 20px 65px;
+}
+
+main {
+    display: flex;
+    gap: 2%;
+}
+
+.main__info {
+    max-width: 1000px;
+}
+
+.info__radio {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 55px;
+    margin-right: 0;
+}
+
+input[type='radio'],
+label {
+    cursor: pointer;
+}
+
+input[type='radio'] {
+    position: relative;
+    height: 22px;
+    width: 22px;
+    appearance: none;
+    outline: none;
+}
+
+input[type='radio']::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+input[type='radio']:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #C1C1C1;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+}
+
+.info__table {
+    width: 100%;
+    margin-top: 55px;
+}
+
+.info__city {
+    margin-top: 0px;
+}
+
+.table__header,
+.table__header_category,
+.table__header_countries,
+.table__header_areas,
+.table__header_cities,
+.table__header_order,
+.table__header_order_detailed {
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #C1C1C1;
+    border-radius: 3px;
+}
+
+.table__header,
+.table__body {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 30px minmax(200px, 1fr) minmax(150px, .5fr) minmax(200px, 1fr) 150px;
+    gap: 15px;
+}
+
+.card {
+    display: none;
+}
+
+.table__header_areas,
+.table__body_areas {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 30px minmax(80px, .5fr) 1fr 100px;
+    gap: 10px;
+}
+
+.table__header_order,
+.table__body_order {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 30px repeat(2, 100px) 150px 200px 100px 100px repeat(2, 150px);
+    gap: 10px;
+}
+
+.table__header_order_detailed,
+.table__body_order_detailed {
+    width: 900px;
+    display: grid;
+    grid-template-columns: 30px 200px repeat(3, 150px) 50px;
+    gap: 10px;
+}
+
+.table__header_countries,
+.table__body_countries {
+    width: 350px;
+    display: grid;
+    grid-template-columns: 20px repeat(2, 125px);
+    gap: 30px;
+}
+
+.table__header_cities,
+.table__body_cities {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 30px minmax(100px, 1.5fr) minmax(100px, 1fr) 100px 100px;
+    gap: 30px;
+}
+
+.table__body,
+.table__body_category,
+.table__body_countries,
+.table__body_areas,
+.table__body_cities,
+.table__body_order,
+.table__body_order_detailed {
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.table__header_category,
+.table__body_category {
+    width: 400px;
+    display: grid;
+    grid-template-columns: 30px repeat(2, 150px);
+    gap: 10px;
+}
+
+.doing {
+    display: flex;
+    gap: 10px;
+}
+
+.table__body p {
+    width: 200px;
+    overflow: auto;
+}
+
+.table__body_order p {
+    width: 150px;
+    overflow: auto;
+}
+
+.executor {
+    margin-top: 50px;
+}
+
+.doing_order {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.order_btn {
+    width: 150px;
+}
+
+.saveRC {
+    width: 150px;
+    text-align: center;
+}
+
+.noWhite {
+    color: black;
+}
+
+.updatePriceBlock {
+    display: flex;
+    gap: 3px;
+}
+
+.updatePrice {
+    width: 50px;
+    padding: 0px;
+}
+
+.price {
+    width: 50px;
+    padding: 0px;
+}
+
+#area {
+    margin-top: 20px;
+}
+
+.info__title {
+    margin-top: 50px;
+}
+
+.plusTreck {
+    padding: 7px 30px 7px 30px;
+    background-color: #7b00df;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+[alt='icon']{
+    width: 32px;
+    height: 32px;
+}
+
+.modal__area{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media(max-width:1300px) {
+
+    .table__header,
+    .table__body {
+        width: 90%;
+    }
+
+    .table__body p {
+        width: 150px;
+    }
+
+    .info__radio {
+        width: 150px;
+    }
+}
+
+@media(max-width:1025px) {
+
+    .info__table_card {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        word-break: break-all;
+        gap: 5px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .card p {
+        overflow-x: hidden;
+    }
+
+    .password {
+        font-size: 12px;
+    }
+
+    .main__menu {
+        width: 150px;
+        font-size: 14px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .table__header_areas,
+    .table__body_areas {
+        width: 70%;
+    }
+
+    .table__body p {
+        width: 80px;
+    }
+
+    .menu__desc {
+        padding: 10px 2px 10px 2px;
+    }
+
+    .menu__desc a {
+        padding: 10px 15px 10px 15px;
+    }
+
+    .info__radio {
+        margin-top: 45px;
+    }
+
+    .info__table {
+        margin-top: 25px;
+    }
+
+    .table__header_cities,
+    .table__body_cities {
+        width: 90%;
+    }
+}

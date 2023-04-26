@@ -1,0 +1,63 @@
+.modal-wrapper{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: rgba(89, 89, 89, 0.489);
+        z-index: 10;
+}
+
+.modal{
+    position: relative;
+    width: 400px;
+    padding: 40px;
+    margin: 250px auto 50px;
+    background-color: white;
+    border-radius: 5px;
+    animation: modal_animation 1.5s;
+}
+
+.closed{
+    margin-top: -20px;
+    margin-left: 100%;
+}
+
+.closed:hover{
+    color: #7b00df;
+    cursor: pointer;
+}
+
+.modal__title{
+    margin-bottom: 20px;
+}
+
+input{
+    padding: 5px 10px;
+    outline: none;
+}
+
+.input__category{
+    margin-bottom: 10px;
+}
+
+button{
+    padding: 7px 30px 7px 30px;
+    background-color: #7b00df;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.detailed{
+    color: black;
+}
+
+@media(max-width:450px) {
+    .modal{
+        width: 300px;
+    }
+}

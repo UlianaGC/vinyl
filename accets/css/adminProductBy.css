@@ -1,0 +1,32 @@
+h2{
+    margin-top: 50px;
+}
+
+.table__headerProductsByCategory {
+    background-color: #C1C1C1;
+}
+
+.table__productsByCategory,
+.table__headerProductsByCategory {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 20px 200px 100px 250px 200px 50px 100px;
+    gap: 20px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.table__productsByCategory {
+    background-color: white;
+}
+
+.table__productsByCategory p {
+    width: 200px;
+    overflow: auto;
+}
+
+.link{
+    color: #7b00df;
+    text-decoration: underline #7b00df;
+}
